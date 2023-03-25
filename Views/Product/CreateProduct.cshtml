@@ -1,0 +1,12 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model Product
+<h1>Create</h1>
+<form asp-action="CreateProduct" method="post">
+    <input type="text"  asp-for="Name" placeholder="Prodact Name" />
+    <br/>
+    <input type="number" asp-for="Quantity" placeholder="Quantity" />
+    <br/>
+    <button>Ekle</button>
+</form>
+
+<a asp-action="Privacy" asp-controller="Home" asp-route-a="aaa" asp-route-b="bbb" asp-route-Id="123" asp-route-x="xxx">Content </a>
